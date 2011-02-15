@@ -5,7 +5,6 @@ describe PagesController do
 
   describe "GET 'home'" do
     it "should be successful" do
-      pending
       get 'home'
       response.should be_success
     end
