@@ -1,20 +1,11 @@
 require 'rubygems'
 require 'spork'
-require 'simplecov'
 
 Spork.prefork do
   # Loading more in this block will cause your tests to run faster. However, 
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
 
-  #require File.expand_path("../../simplecov.rb", __FILE__)
-
-  # SimpleCov http://bit.ly/gIK9Bd
-  SimpleCov.start do 
-    add_filter "spec"
-    add_group "Models", "app/models" 
-    add_group "Controllers", "app/controllers"
-  end 
   # --- Spork Instructions ---
   # - Sort through your spec_helper file. Place as much environment loading 
   #   code that you don't normally modify during development in the 
@@ -66,5 +57,7 @@ end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
+  require File.expand_path("../../simplecov.rb", __FILE__)
+
 
 end
