@@ -1,0 +1,28 @@
+= Welcome 
+
+This is my base app for Rails 3.  I use lots of tools that just take a while to get up and running in a stable and reliable way.  
+
+Built into this are:
+- rspec
+- webrat
+- cucubmer
+- spork
+- factory-girl
+- rcov
+- simplecov 
+- annotate
+- autotest
+- delayed job
+- heroku 
+
+This is a plain vanilla app with some very basic pieces of code -- enough to prove some stuff is working, but easy to strip out.
+
+== Install 
+
+Just clone the repository and use as your starting point.
+
+  rake db:migrate 
+  rake db:test prepare 
+
+
+
