@@ -2,6 +2,7 @@ Marketing::Application.routes.draw do
   get "sanity/page"
 
   match 'sanity/delayed_job' => 'sanity#delayed_job', :via => :post
+  match 'sanity/delayed_method_call' => 'sanity#delayed_method_call', :via => :post
 
   get "pages/home"
 
