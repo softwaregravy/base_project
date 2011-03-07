@@ -18,6 +18,10 @@ group :test do
   gem 'factory_girl_rails'
   gem 'rcov'
   gem 'simplecov'
+  gem 'autotest'
+  gem 'autotest-fsevent' 
+  gem 'autotest-growl'
+  gem 'cucumber-rails'
 end 
 
 
